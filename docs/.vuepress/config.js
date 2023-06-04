@@ -9,14 +9,14 @@ const THEME_PATH = '/vuepress-theme/'
  */
 
 module.exports = {
-    base: '/zdz-blog/',
+    // base: '/zdz-blog/', // 这里注释，不需要了，因为styles/index.styl里面设置属性的cursor地址不会自动拼接一个base
     title: "zdz's blogs",
     description: '😁🤞😁',  
     port: 8080,
     theme: 'vuepress-theme-maker',
     head: [
-        ['link', { rel: 'icon', href: '/avatar.jpg' }],
-        ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['link', { rel: 'icon', href: '/avatar.ico' }],
+        // ['link', { rel: 'manifest', href: '/manifest.json' }],
         ['meta', { name: 'theme-color', content: '#607d8b' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -312,7 +312,7 @@ module.exports = {
         [
             'dynamic-title',
             {
-               showIcon: '/avatar.icon',
+            //    showIcon: '/avatar.ico',
             //    showIcon: '/favicon.ico',
                showText: '(/≧▽≦/)😁😁',
             //    hideIcon: '/failure.ico',

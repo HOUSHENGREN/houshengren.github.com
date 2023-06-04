@@ -1,4 +1,11 @@
-## vuepress 美化
+---
+date: 2023-06-04
+title: vuepress 美化
+category: daily life
+cover: /mdImages/024.webp
+tags:
+  - vuepress
+---
 
 ## 网站图标制作，jpg和ico文件都是可以，建议ico，文件更小，占用内存更小。鼠标的cursor的图标支持ico文件。
 
