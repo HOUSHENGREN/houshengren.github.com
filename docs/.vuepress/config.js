@@ -15,7 +15,7 @@ module.exports = {
     port: 8080,
     theme: 'vuepress-theme-maker',
     head: [
-        ['link', { rel: 'icon', href: '/avatar.ico' }],
+        // ['link', { rel: 'icon', href: '/avatar.ico' }],
         // ['link', { rel: 'manifest', href: '/manifest.json' }],
         ['meta', { name: 'theme-color', content: '#607d8b' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -38,7 +38,7 @@ module.exports = {
     },
     themeConfig: {
         logo: '/avatar.jpg',
-        hostname: 'https://houshengren.github.io/zdz-blog',
+        hostname: 'https://houshengren.github.io',
         // hostname: 'https://80shuo.com',
         nav: [
         { text: '🏠 Home', link: '/' },
@@ -61,7 +61,7 @@ module.exports = {
         },
         {
             type: 'github',
-            link: 'HOUSHENGREN/zdz-blog'
+            link: 'HOUSHENGREN/houshengren.github.com'
         },
         //   {
         //     type: 'qq',
@@ -133,12 +133,12 @@ module.exports = {
             }
         ],
         sitemap: {
-            hostname: 'https://houshengren.github.io/zdz-blog',
+            hostname: 'https://houshengren.github.io',
             // hostname: 'https://80shuo.com',
             exclude: ['/404.html']
         },
         feed: {
-            canonical_base: 'https://houshengren.github.io/zdz-blog',
+            canonical_base: 'https://houshengren.github.io',
             // canonical_base: 'http://80shuo.com',
         },
         comment: {
@@ -312,10 +312,10 @@ module.exports = {
         [
             'dynamic-title',
             {
-            //    showIcon: '/avatar.ico',
+               showIcon: '/avatar.ico',
             //    showIcon: '/favicon.ico',
                showText: '(/≧▽≦/)😁😁',
-            //    hideIcon: '/failure.ico',
+               hideIcon: '/wbb-mad04.ico',
                hideText: '爱我，别走😭😭',
             //    hideText: '(●—●)喔哟，崩溃啦！',
                recoverTime: 2000,
