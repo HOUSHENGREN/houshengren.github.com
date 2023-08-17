@@ -17,6 +17,7 @@ module.exports = {
     head: [
         // ['link', { rel: 'icon', href: '/avatar.ico' }],
         // ['link', { rel: 'manifest', href: '/manifest.json' }],
+        ['meta', { name: 'referrer', content: 'no-referrer' }], // 网络图片不显示
         ['meta', { name: 'theme-color', content: '#607d8b' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],

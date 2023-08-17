@@ -65,7 +65,7 @@ export default {
 
 ## v-permission的实现
 
-实现v-permission指令。实现这一指令，可以在用户登录时，请求一次用户的权限fetchPermissions，存到localstorage，这样就方便指令去拿权限信息了。绑定的指令先判断当前绑定权限是否包含，没有则隐藏，当然处理隐藏还可以做其它处理，比如禁止点击。另外，绑定的值的类型可以做过判断，兼容下，传入数组的情况。
+实现v-permission指令。实现这一指令，可以在用户登录时，请求一次用户的权限fetchPermissions，存到localstorage，这样就方便指令去拿权限信息了。绑定的指令先判断当前绑定权限是否包含，没有则隐藏，当然处理隐藏还可以做其它处理，比如禁止点击。另外，绑定的值的类型可以做个判断，兼容下，传入数组的情况。
 
 ~~~
 permisson: {
@@ -98,12 +98,12 @@ empty: {
     const empty = Vue.extend({
       template: `<div style='height: ${offsetHeight}px;width:${offsetWidth}px;${defaultStyle}'>
         <div style='text-align:center'>
-        <div>
-          ${image}
-        </div>
-        <div>
-          ${content || '暂无数据'}
-        </div>
+          <div>
+            ${image}
+          </div>
+          <div>
+            ${content || '暂无数据'}
+          </div>
         </div>
       </div>
       `
@@ -123,7 +123,7 @@ empty: {
 ~~~
 preventReClick: {
   inserted(el, binding, vnode) {
-    el.addEventListener('input', function() {
+    el.addEventListener('click', function() {
       if(!el.disabled) {
         el.disabled = true
         setTimeout(() => { el.disabled = false }, binding.value || 2000)
