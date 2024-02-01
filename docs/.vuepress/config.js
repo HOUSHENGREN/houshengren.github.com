@@ -73,7 +73,8 @@ module.exports = {
         //     link: '/rss.xml'
         //   }
         ],
-        copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://17ria.com/">Neil Chen</a>`,
+        copyright: `© ${new Date().getFullYear()}  <a style="font-weight: bold;" target="_blank" rel="external nofollow noopener" href="https://beian.miit.gov.cn">粤ICP备2024177801号</a>`,
+        // copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://17ria.com/">Neil Chen</a>`,
         reward: {
         text: 'Buy me a cup of coffee ☕.',
         enable: true,
