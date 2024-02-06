@@ -2,7 +2,7 @@
 date: 2022-03-18
 title: Blender学习记录
 category: study
-cover: /mdImages/015.webp
+cover: /mdImages/021.webp
 tags:
   - Blender
 ---

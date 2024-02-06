@@ -12,7 +12,8 @@ module.exports = {
     // base: '/zdz-blog/', // 这里注释，不需要了，因为styles/index.styl里面设置属性的cursor地址不会自动拼接一个base
     title: "zdz's blogs",
     description: '😁🤞😁',  
-    port: 8080,
+    port: 80,
+    // port: 8080,
     theme: 'vuepress-theme-maker',
     head: [
         // ['link', { rel: 'icon', href: '/avatar.ico' }],
@@ -49,7 +50,7 @@ module.exports = {
         // { text: '🖼 Theme Gallery', link: '/vuepress-theme/' },
         // #endregion
         //   { text: '🔥 Animation', link: '/categories/animation/' },
-        //   { text: '🔗 friend-links', link: '/friend-links/' },  
+          { text: '🔗 friend-links', link: '/friend-links/' },  
         ],
         searchPlaceholder: 'Search ⌘+K',
         searchMaxSuggestions: 10,
